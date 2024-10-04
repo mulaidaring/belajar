@@ -1,0 +1,26 @@
+body {
+    background-color: blanchedalmond;
+    color: brown;
+}
+#layout {
+    float: none;
+    width: 800px;
+}
+#top {
+    float: left;
+    width: 800px;
+    height: 100px;
+    background-color: royalblue;
+}
+#left {
+    float: left;
+    width: 200px;
+    height: 300px;
+    background-color: cadetblue;
+}
+#main {
+    float: left;
+    width: 600px;
+    height: 300px;
+    background-color: blanchedalmond;
+}
