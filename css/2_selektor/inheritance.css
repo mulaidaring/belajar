@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(26, 44, 26);
+}
+#top {
+    background: blueviolet;
+    color: greenyellow;
+}
+#top .intro {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 20pt;
+        font-weight: bold;
+        color: yellow;
+}
+

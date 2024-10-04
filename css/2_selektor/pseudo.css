@@ -1,0 +1,8 @@
+p:first-letter {
+    color: red;
+    font-size: 50pt;
+}
+p.konten::first-line {
+    color:red;
+    font-size: 50pt;
+}
