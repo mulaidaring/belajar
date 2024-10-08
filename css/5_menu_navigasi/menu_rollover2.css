@@ -18,3 +18,20 @@
     border-right: 1px solid #333;
     border-left: 1px solid #333;
 }
+#menu a:hover, #menu a.active {
+    padding-top: 10px;
+    background-color: #333;
+}
+#menu a.lastMenuItem {
+    background-repeat: no-repeat;
+    background-position: top right;
+    border-right: 0px;
+}
+a .rov {
+    display: none;
+    text-transform: lowercase;
+    color: #fc0;
+}
+a:hover .rov, .active .rov {
+    display: block;
+}
