@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ini adalah menu oval button</title>
+        <style>
+            a.ovalbutton {
+                background-color: blanchedalmond;
+                display: block;
+                float: left;
+                font: normal 13px tahoma;
+                height: 24px;
+                padding-left: 11px;
+                text-decoration: none;
+            }
+            a:link.ovalbutton, a:visited.ovalbutton, a:active.ovalbutton {
+                color: #494949;
+            }
+            a.ovalbutton span {
+                background-color: blanchedalmond;
+                display: block;
+                padding: 4px 11px 4px 0;
+            }
+            a.ovalbutton:hover {
+                background-position: bottom left;
+            }
+            a.ovalbutton:hover span {
+                background-position: bottom right;
+                color: black;
+            }
+            .buttonwrapper {
+                overflow: hidden;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <h4>Oval button Single :</h4>
+        <div class="buttonwrapper">
+                <a class="ovalbutton" href="#"><span>Mulaidaring.com</span></a>
+        </div>
+        <h4>Oval Button Double:</h4>
+        <div class="buttonwrapper">
+                <a class="ovalbutton" href="#"><span>Submit</span></a> <a class="ovalbutton" href="#" style="margin-left: 6px;"><span>Reset</span></a>
+        </div>
+    </body>
+</html>
