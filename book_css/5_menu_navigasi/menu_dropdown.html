@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dropdown menggunakan html dan css</title>
+        <style>
+            #menu {
+                position: relative;
+                width: 100%;
+                height: 40px;
+                background-color: #ff0000;
+                border: 1px solid #000000;
+            }
+            #menu ul {
+                padding: 0px;
+                margin: 0px;
+                list-style: none;
+            }
+            #menu ul li {
+                float: left;
+                position: relative;
+            }
+            #menu ul li a {
+                float: left;
+                color: #ffffff;
+                padding: 10px;
+                border-right: 1px solid #000;
+                text-decoration: none;
+                display: block;
+            }
+            #menu ul li a:hover {
+                background: #000000;
+            }
+            #menu ul li ul {
+                display: none;
+            }
+            #menu ul li:hover ul {
+                display: block;
+                position: absolute;
+                top: 41px;
+                left: 0;
+            }
+            #menu ul li:hover ul li a {
+                display: block;
+                background: #ff0000;
+                width: 130px;
+                border-left: 1px solid #000000;
+            }
+            #menu ul li:hover ul li a:hover {
+                background: #000000;
+                color: #ffffff;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div id="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Profile</a>
+                <ul>
+                    <li><a href="#">Tentang Kami</a></li>
+                    <li><a href="#">Sejarah</a></li>
+                    <li><a href="#">Visi & Misi</a></li>
+                    <li><a href="#">Struktur Organisasi</a></li>
+                </ul>
+                </li>
+                <li><a href="#">Kontak</a>
+                <ul>
+                    <li><a href="#">Kritik dan saran</a></li>
+                    <li><a href="#">Keluhan</a></li>
+                    <li><a href="#">Pertanyaan</a></li>
+                </ul>
+                </li>
+                <li><a href="#">Info Buku</a>
+                <ul>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">PHP</a></li>
+                </ul>
+                </li>
+                <li><a href="Downlaod">Download</a>
+                <ul>
+                    <li><a href="#">Artikel</a></li>
+                    <li><a href="#">Source Code</a></li>
+                    <li><a href="#">Ternak lele</a></li>
+                </li>
+                </ul>
+            </ul>
+        </div>
+
+    </body>
+</html>
