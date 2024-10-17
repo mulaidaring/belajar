@@ -2,50 +2,46 @@
 <html>
     <head>
         <title>Ini adalah menu vertikal menggunakan html dan css</title>
-    </head>
-    <style>
-        ul.menu {
-            margin: 0;
-            padding: 0;
-            list-style-type: none;
-            display: block;
-            font: bold  Arial, Helvetica, sans-serif;
-            line-height: 165%;
-            width: 200px;
-        }
-        ul.menu li {
-            margin: 0;
-            padding: 0;
-            border-top: 1px solid #4d0000;
-            border-bottom: 200px;
-        }
-        ul.menui li a:hover {
-        
-
-
-
-
-        }
-    
-    
-    
-    
-    
+        <style>
+            ul.menu {
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+                display: block;
+                font: bold 16px Helvetica, Arial, sans-serif;
+                line-height: 165%;
+                width: 200px;
+            }
+            ul.menu li {
+                margin: 0;
+                padding: 0;
+                border-top: 1px solid #4D0000;
+                border-bottom: 1px solid #761A1A;
+            }
+            ul.menu li a {
+                display: block;
+                text-decoration: none;
+                color: #ffffff;
+                background: #600;
+                padding: 0 0 0 20px;
+                width: 180px;
+            }
+            ul.menu li a:hover {
+                background-color: #900;
+            }
+            ul.menu li a.current, ul.menu li a.current:hover {
+                background-color: #933;
+            }
         </style>
-    <body>
-        <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Kontak</a></li>
-            <li><a href="#">Info Buku</a></li>
-            <li><a href="#">Downloads</a></li>
-            <li><a href="#">mulaidaring</a></li>
-        </ul>
-
-
-
-
-
-
-    </body>
+        <body>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Kontak</a></li>
+                <li><a href="#">Info</a></li>
+                <li><a href="#">Downloads</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </body>
+    </head>
 </html>

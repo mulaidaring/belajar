@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login menggunakan html</title>
+    </head>
+    <style>
+        html {
+            height: 100%;
+            font-size: 62.5%;
+        }
+        body {
+            height: 100%;
+            background-color: #ffffff;
+            font-size: 1.2em;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        form {
+            margin: 25px 0 0 29px;
+            width: 450px;
+            padding-bottom: 30px;
+        }
+        fieldset {
+            margin: 0 0 22px 0;
+            border: 1px solid #2b6600;
+            padding: 12px 17px;
+            background-color: #daf5c7;
+        }
+        legend {
+            font-size: 1.2em;
+            background-color: #2b6600;
+            color: #ffffff;
+            font-weight: bold;
+            padding: 4px 8px;
+        }
+        label.float {
+            float: left;
+            display: block;
+            width: 100%;
+            margin: 4px 0 0 0;
+            clear: left;
+        }
+        input.inp-text {
+            border: 1px solid #909090;
+            padding: 3px;
+            width: 300px;
+            margin: 0 0 8px 0;
+        }
+        input.submit-button {
+            font-size: 1.3em;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            letter-spacing: 1px;
+            display: block;
+            margin: 23px 0 0 0;
+        }
+        form br {
+            display: none;
+        }
+    </style>
+    
+    <body>
+        <form action="index.php" method="post">
+    <fieldset>
+            <legend>Login System</legend>
+
+            <label for="username" class="float">username:</label><br>
+            <input type="text" name="username" id="username" class="inp-text"><br>
+
+            <label for="password" class="float">Password :</label><br>
+            <input type="password" name="password" class="inp-text"><br><p></p>
+        
+    </fieldset>
+    <p><input type="submit" value="Masuk" class="submit-button">
+        </form>
+    </body>
+</html>

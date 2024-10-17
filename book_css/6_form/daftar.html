@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ini adalah form pendaftaran</title>
+    </head>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 12px;
+        }
+        .form1 {
+            margin: 0 auto;
+            width: 400px;
+            padding: 10px;
+        }
+        #form {
+            border: solid 2px #b7ddf2;
+            background: #ebf4fb;
+        }
+        #form h1 {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            border-bottom: solid 1px #b7ddf2;
+        }
+        #form p {
+            font-size: 11px;
+            color: #666666;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+        }
+        #form label {
+            display: block;
+            font-weight: bold;
+            text-align: right;
+            width: 140px;
+            float: left;
+        }
+        #form .small {
+            color: #666666;
+            display: block;
+            font-size: 11px;
+            font-weight: normal;
+            text-align: right;
+            width: 140px;
+        }
+        #form input {
+            float: left;
+            font-size: 12px;
+            padding: 4px 2px;
+            border: solid 1px #aacfe4;
+            width: 200px;
+            margin: 2px 0 20px 10px;
+        }
+        #form input.highlight {
+            background: #f9f9f9;
+            border: solid 1px #cccccc;
+            padding: 5px;
+        }
+        #form input.highlight:focus {
+            border: solid 1px #D9ADD0;
+            background: #fff7d7;
+        }
+        form button {
+            clear: both;
+            margin-left: 150px;
+            width: 125px;
+            height: 31px;
+            background: #666666;
+            text-align: center;
+            line-height: 31px;
+            color: #ffffff;
+            font-size: 11px;
+            font-weight: bold;
+        }
+    </style>
+    <body>
+        <div id="form" class="form1">
+            <form action="index.php" name="form" id="form" method="post">
+                <h1>Form Pendaftaran</h1>
+
+                <label>No. Identitas
+                    <span class="small">KTP/SIM/PASSPORT</span>
+                </label> 
+                <input type="text" name="name" id="name" class="highlight">
+
+                <label>Nama
+                    <span class="small">Masukkan Nama</span>
+                </label>
+                <input type="text" name="name" id="name" class="highlight">
+
+                <label>Email
+                    <span class="small">Masukkan Email</span>
+                </label>
+                <input type="text" name="name" id="name" class="highlight">
+
+                <label>Alamat
+                    <span class="small">Masukkan Alamat</span>
+                </label>
+                <input type="text" name="name" id="name" class="highlight">
+
+                <label>Password
+                    <span class="small">Masukkan Password</span>
+                </label>
+                <input type="password" name="name" id="name" class="highlight">
+
+                <button type="submit">Daftar</button>
+            </form>
+        </div>
+    </body>
+</html>
