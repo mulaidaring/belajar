@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>menggunakan atribute class pada javascript</h2>
+    <p>hide button untuk menyembunyikan element dengan class kota</p>
+
+    <button onclick="myFunction()">Hide element</button>
+
+    <h2 class="city">Jakarta</h2>
+    <p>mantan ibukota Indonesia</p>
+    <h2 class="city">Semarang</h2>
+    <p>Ibukota jawa tengah</p>
+    <h2 class="city">Surabaya</h2>
+    <p>Ibukota jawa timur</p>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementsByClassName("city");
+        for (var i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
