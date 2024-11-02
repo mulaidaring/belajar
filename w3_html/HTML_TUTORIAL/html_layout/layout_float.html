@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML CSS MENGGUNAKAN FLOAT</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      /* STYLE HEADER */
+      header {
+        background-color: cornflowerblue;
+        color: white;
+        font-size: 35px;
+        padding: 30px;
+        text-align: center;
+      }
+      /* Create two columns/boxes that floats next to each other */
+      nav {
+        float: left;
+        width: 30%;
+        background: thistle;
+        padding: 20px;
+        height: 300px;
+      }
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      article {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: cadetblue;
+        height: 300px;
+      }
+      section::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      /* STYLE FOOTER */
+      footer {
+        background-color: #777;
+        color: white;
+        padding: 10px;
+        text-align: center;
+      }
+
+      /* Responsive Layout */
+      @media (max-width: 600px) {
+        nav,
+        article {
+          width: 100%;
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>HEADER</h2>
+    </header>
+    <section>
+      <nav>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">PROFILE</a></li>
+          <li><a href="#">KONTAK</a></li>
+        </ul>
+      </nav>
+      <article>
+        <h1>Lorem Ipsum</h1>
+        <p>
+          Lorem Ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum
+          dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet
+          lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum
+          dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet
+        </p>
+    </section>
+    <footer>
+        <p>Ini adalah footer</p>
+      </footer>
+  </body>
+</html>
